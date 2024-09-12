@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo sobre Libras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+    <header>
+        <h1> Estudo sobre libras</h1>
+    </header>
+    <main>
+        <p> Estudo de implantação da api de libras em projetos web.</p>
+        <p> Utilizaremos o VLibras, disponibilizado pelo governo brasileiro, e tem o seu uso livre </p>
+
+        <div class="barra">
+            <nav>
+                <div class="logoFatec">
+                    <img src="img/Fatec Taquaritinga (oficial) 2.png" alt="logoFatec">
+                </div>
+                <div class="btacessibilidade">
+                    <button id="toggleVlibras"><img id="buttonIcon"src="img/libras-logo.svg" alt="librasSimboolo"></button>
+                    <button id="botãoMaisZoom"><img class="escuro" src="img/zoom-plus-svgrepo-com.svg" alt="mais zoom"></button>
+                    <button id="botãoMenosZoom"><img class="escuro" src="img/zoom-out-svgrepo-com.svg" alt="menos zoom"></button>
+                    <button id="botãoEscuro"><img class="escuro" src="img/dark-mode-night-moon-svgrepo-com.svg" alt="modo escuro"></button>
+                    <button id="botãoClaro"><img class="escuro" src="img/light-mode-svgrepo-com.svg" alt="modo clarro"></button>
+
+                </div>
+            </nav>
+        </div>
+    </main>
+    <footer>
+        <p> Fatec Taquaritinga - Setembro 2024 </p>
+    </footer>
+
+    <div class="vlibrasbarra">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="barraAcessibilidade.js"></script>
+</body>
+
+</html>
